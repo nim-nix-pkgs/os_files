@@ -13,6 +13,7 @@
   inputs.src-os_files-master.ref   = "refs/heads/master";
   inputs.src-os_files-master.owner = "tormund";
   inputs.src-os_files-master.repo  = "os_files";
+  inputs.src-os_files-master.dir   = "";
   inputs.src-os_files-master.type  = "github";
   
   inputs."oldgtk3".owner = "nim-nix-pkgs";
