@@ -13,7 +13,6 @@
   inputs.src-os_files-master.ref   = "refs/heads/master";
   inputs.src-os_files-master.owner = "tormund";
   inputs.src-os_files-master.repo  = "os_files";
-  inputs.src-os_files-master.dir   = "";
   inputs.src-os_files-master.type  = "github";
   
   inputs."oldgtk3".owner = "nim-nix-pkgs";
@@ -31,6 +30,14 @@
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."darwin".owner = "nim-nix-pkgs";
+  inputs."darwin".ref   = "master";
+  inputs."darwin".repo  = "darwin";
+  inputs."darwin".dir   = "master";
+  inputs."darwin".type  = "github";
+  inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
